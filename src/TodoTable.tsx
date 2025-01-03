@@ -4,12 +4,6 @@ export default function TodoTable(props: TodoTableProps) {
   return (
     <div>
       <table id="todotable">
-        <thead>
-          <tr>
-            <th>Description</th>
-            <th>Duedate</th>
-          </tr>
-        </thead>
         <tbody>
         {
         props.todos.map((todo: Todo, index: number) => 
