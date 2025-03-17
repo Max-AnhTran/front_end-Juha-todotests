@@ -32,6 +32,7 @@ function App() {
         value={todo.date} 
         onChange={inputChanged} />
       <button onClick={addTodo}>Add</button>
+      <button onClick={() => setTodos([])}>Clear</button>
       <TodoTable todos={todos} />
     </div>
   );

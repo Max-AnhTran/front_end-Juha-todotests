@@ -26,4 +26,9 @@ test("add todo", () => {
 
     const table = screen.getByRole("table");
     expect(table).toHaveTextContent(/go to coffee/i);
+
+    const clearButton = screen.getByText("Clear");
+    fireEvent.click(clearButton);
+
+    expect(table).not.toHaveTextContent(/go to coffee/i);
 });
