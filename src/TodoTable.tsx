@@ -1,4 +1,4 @@
-import { TodoTableProps } from "./types"
+import { TodoTableProps, Todo } from "./types"
 
 export default function TodoTable(props: TodoTableProps) {
   return (
